@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" type="text/css" href="r_p_s.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            Rock Paper Scissors !!
+        </header>
+
+        <p class="score-board" id="you">Your score: <span id="userScore">0</span></p>
+        <p class="score-board" id="comp">Computer score: <span id="computerScore">0</span></p>
+
+        <select id="choose" onchange="playGame(this.value)">
+            <option>rock</option>
+            <option>paper</option>
+            <option>scissors</option>
+        </select>
+
+        <p class="result"></p>
+    </div>
+
+    <script src="r_p_s.js"></script>
+</body>
+</html>

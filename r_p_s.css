@@ -1,0 +1,107 @@
+body {
+    background-color: #3a8ca7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .main {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  header {
+    font-size: 24px;
+    text-align: center;
+    color: #030129;
+    margin-bottom: 20px;
+  }
+  
+  .score-board {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #you,
+  #comp {
+    font-weight: bold;
+  }
+  
+  #userScore,
+  #computerScore {
+    color: #0660fc93;
+  }
+  
+  select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #999;
+    background-color: #f2f2f2;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #3a8ca7;
+  }
+  
+  .result {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0660fc93;
+    margin-top: 20px;
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  
+  /* Add transition to the page */
+  body,
+  .main {
+    transition: background-color 0.5s ease-in-out;
+  }
+  
+  /* Add dramatic appearance to the output */
+  .result {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Media queries for adjusting the game console */
+  @media (max-width: 600px) {
+    .main {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-height: 400px) {
+    .main {
+      max-height: 80%;
+      overflow-y: auto;
+    }
+  }
+  
